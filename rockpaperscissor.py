@@ -7,7 +7,7 @@ app.secret_key = "rockpaperscissors"
 choices = {
     "rock": "🪨",
     "paper": "📄",
-    "scissors": "✂️"
+    "scissor": "✂️"
 }
 
 html = """
