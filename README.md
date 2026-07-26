@@ -12,7 +12,7 @@ A simple and interactive **Rock Paper Scissors** web game built using **Python F
 - 📜 Game history (last 10 matches)
 - 🔄 Reset score button
 - 🎨 Modern responsive user interface
-- 💾 Session-based score storage
+- 💾 Session-based score 
 - ⚡ Smooth animations and hover effects
 
 ---
