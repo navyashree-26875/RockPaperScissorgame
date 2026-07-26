@@ -209,7 +209,7 @@ html = """
 
     <div class="history">
 
-        <h3>📜 Game History</h3>
+        <h3> Game History</h3>
 
         <ul>
             {% for item in history %}
