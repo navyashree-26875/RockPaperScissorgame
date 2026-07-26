@@ -1,70 +1,60 @@
 # 🎮 Rock Paper Scissors Game using Flask
 
-A simple and interactive **Rock Paper Scissors** web application developed using **Python** and the **Flask** framework. The game allows a player to compete against the computer, displays the result of each round, and keeps track of the scores.
+A simple and interactive **Rock Paper Scissors** web game built using **Python Flask**, **HTML**, and **CSS**. The game allows the player to compete against the computer, keeps track of scores, and stores game history using Flask sessions.
 
 ---
 
-## 📌 Project Description
+## 📌 Features
 
-This project is a web-based implementation of the classic **Rock Paper Scissors** game. The player selects either **Rock**, **Paper**, or **Scissors**, while the computer randomly chooses one of the three options. The application compares both choices, declares the winner, and updates the score automatically.
-
-The application is built using:
-- Python
-- Flask
-- HTML
-- CSS
-
----
-
-## ✨ Features
-
-- 🎮 Interactive web interface
-- 🪨 Rock, 📄 Paper, ✂️ Scissors selection
-- 🤖 Random computer choice
-- 🏆 Winner announcement
-- 📊 Live scoreboard
-- 🤝 Tie counter
-- 🎨 Attractive gradient background with modern UI
-- ⚡ Fast and lightweight
+- 🪨 Rock, 📄 Paper, ✂️ Scissors gameplay
+- 💻 Random computer choice
+- 🏆 Player, Computer, and Tie score tracking
+- 📜 Game history (last 10 matches)
+- 🔄 Reset score button
+- 🎨 Modern responsive user interface
+- 💾 Session-based score storage
+- ⚡ Smooth animations and hover effects
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Technologies Used
 
-- Python 3.x
+- Python 3
 - Flask
 - HTML5
 - CSS3
+- Jinja2 Template Engine
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 RockPaperScissors/
 │
 ├── app.py
 ├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## ▶️ Installation
+## 📥 Installation
 
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/rock-paper-scissors-flask.git
+git clone https://github.com/yourusername/RockPaperScissors.git
 ```
 
-or simply download the project ZIP file.
+or download the ZIP file and extract it.
 
 ---
 
-### Step 2: Open the Project Folder
+### Step 2: Navigate to the Project Folder
 
 ```bash
-cd rock-paper-scissors-flask
+cd RockPaperScissors
 ```
 
 ---
@@ -75,19 +65,29 @@ cd rock-paper-scissors-flask
 pip install flask
 ```
 
+or
+
+```bash
+pip install -r requirements.txt
+```
+
 ---
 
-### Step 4: Run the Application
+## ▶️ Running the Application
+
+Run the following command:
 
 ```bash
 python app.py
 ```
 
----
+You will see something similar to:
 
-### Step 5: Open in Browser
+```
+* Running on http://127.0.0.1:5000/
+```
 
-Visit:
+Open your browser and visit:
 
 ```
 http://127.0.0.1:5000/
@@ -97,80 +97,119 @@ http://127.0.0.1:5000/
 
 ## 🎮 How to Play
 
-1. Open the application in your browser.
-2. Click one of the buttons:
-   - 🪨 Rock
-   - 📄 Paper
-   - ✂️ Scissors
+1. Open the website.
+2. Choose **Rock**, **Paper**, or **Scissors**.
 3. The computer randomly selects its choice.
-4. The winner is displayed.
-5. The scoreboard updates automatically.
-6. Continue playing as many rounds as you like.
+4. The result is displayed:
+   - 🎉 You Win
+   - 💻 Computer Wins
+   - 🤝 It's a Tie
+5. Scores are automatically updated.
+6. The latest 10 matches are displayed in the Game History section.
+7. Click **Reset Score** to clear all scores and history.
 
 ---
 
 ## 🏆 Game Rules
 
-- Rock defeats Scissors
-- Paper defeats Rock
-- Scissors defeat Paper
-- If both choose the same option, the game is a Tie.
+| Player Choice | Computer Choice | Result |
+|---------------|-----------------|--------|
+| Rock | Scissors | Player Wins |
+| Rock | Paper | Computer Wins |
+| Paper | Rock | Player Wins |
+| Paper | Scissors | Computer Wins |
+| Scissors | Paper | Player Wins |
+| Scissors | Rock | Computer Wins |
+| Same Choice | Same Choice | Tie |
 
 ---
 
-## 📸 User Interface
+## 📸 Screenshots
 
-The application includes:
+### Home Page
 
-- Modern glassmorphism design
-- Gradient background
-- Large emoji icons
-- Responsive buttons
+- Modern glassmorphism interface
+- Three game buttons
 - Scoreboard
-- Winner display
+- Game history
+
+### Result Page
+
+- Player choice
+- Computer choice
+- Animated result
+- Updated scores
 
 ---
 
-## 📊 Scoreboard
+## 🔒 Session Management
 
-The application tracks:
+The application uses Flask Sessions to store:
 
-- 🏆 Player Score
-- 💻 Computer Score
-- 🤝 Tie Count
+- Player Score
+- Computer Score
+- Tie Count
+- Game History
+
+Each user has their own independent scores during their browsing session.
 
 ---
 
-## 📌 Future Enhancements
+## 🚀 Future Enhancements
 
-- Reset Score button
-- Sound effects
-- Player name input
-- Best of 3 / Best of 5 mode
+- Add sound effects
+- Dark mode
+- Difficulty levels
 - Multiplayer mode
-- Database support
-- Responsive mobile layout
-- Dark/Light theme
-- Animations
+- User login system
+- Online leaderboard
+- Timer mode
+- Database integration
+- AI-based computer strategy
+- Tournament mode
 
 ---
 
-## 🐞 Known Limitation
+## 📋 Requirements
 
-The scores are stored in global variables. Restarting the Flask server resets all scores because they are not saved in a database.
+Python Version:
+
+```
+Python 3.8 or above
+```
+
+Required Package:
+
+```
+Flask
+```
+
+Create a `requirements.txt` file containing:
+
+```
+Flask
+```
 
 ---
 
 ## 👨‍💻 Author
 
-Developed using **Python** and **Flask** as a beginner-friendly web application project.
+**Name:** Manjunath A
+
+Project: **Rock Paper Scissors Game using Flask**
 
 ---
 
-## 📄 License
+## 📜 License
 
-This project is open-source and available for educational and learning purposes.
+This project is created for educational and learning purposes.
+
+Feel free to modify and improve it for your own projects.
 
 ---
 
-### ⭐ If you like this project, consider giving it a star and sharing it with others!
+## ⭐ Thank You
+
+Thank you for checking out this project.
+
+If you like this project, consider giving it a ⭐ on GitHub.
